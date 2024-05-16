@@ -1,0 +1,38 @@
+table, th, td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+  }
+
+table {
+    table-layout: fixed;
+}
+
+h3 {
+    font-style: italic;
+}
+
+td {
+    height: 4rem;
+    text-align: left;
+    padding-right: 20px;
+    max-width: 40rem;
+    word-wrap: break-word;
+}
+tr:nth-child(2) td:nth-child(2) {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+tr td:nth-child(1) {
+    text-transform: capitalize;
+}
+
+tr td:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
